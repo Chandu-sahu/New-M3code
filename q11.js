@@ -3,28 +3,40 @@ let a = input.questionInt("enter the a number")
 let b = input.questionInt("enter the b number")
 let c = input.questionInt("enter the c number")
 let d = input.questionInt("enter the d number")
-let m;
-let m2;
-let m3;
+
 if(a>b)
 {
-    m=a;
+    m1=b
+    m2=a;
 }
 else{
-    m=b;
+    m1=a
+    m2=b;
 }
 if(c>d)
 {
-    m2=c;
+    m3=d
+    m4=c;
 }
 else{
-    m2=d;
+    m3=c
+    m4=d;
 }
-if(m>m2)
+
+if(m1>m3)
 {
-    m3=m
+    m5=m3
+    m6=m1;
+}
+else
+{
+    m5=m1
+    m6=m3;
+}
+if(m5>m6)
+{
+    console.log(m5)
 }
 else{
-    m3=m2
+    console.log(m6)
 }
-console.log(m3)
