@@ -1,77 +1,25 @@
- const input = require("readline-sync")
-let a = input.questionInt("enter a number")
-let b = input.questionInt("enter b number")
-let c = input.questionInt("enter c number")
-let d = input.questionInt("enter d number")
-let e = input.questionInt("enter e number")
-let s = 1;
-let p = 1;
-let q = 1;
-let r = 1;
+const input = require("readline-sync")
+let a = input.questionInt("enter the first number")
+let b = input.questionInt("enter the second number")
+let m=a;
+let n=b;
 
-if(a==b)
+while (a!==b)
 {
-    s=s+1;
-
-}
-else if(a==c)
+if(a>b)
 {
-    s=s+1;
+    a=a-b;
 }
-else if (a==d)
+else
 {
-    s=s+1;
+    b=b-a;
 }
-else if(a==e)
-{
-    s=s+1;
 }
-else if(b==c)   
-{
-    p=p+1;
-}
-else if(b==d)
-{
-    p=p+1;
-}
-else if(b==e)
-{
-    p=p+1;
-}
-else if(c==d) 
-{
-    q=q+1;
-}
-else if(c==e)
-{
-    q=q+1;
-}
-else if(d==e)
-{
-    r=r+1;
-}
-
-console.log(s)
-console.log(p)
-console.log(q)
-console.log(r)
- 
+    
+   let hcf =a;
+   console.log("hcf:",hcf)
+    let lcm = (m*n)/hcf
+    console.log("lcm:",lcm)
 
 
-// if(a==b && a==c && a==d && a==e)
-// {
-//     s=s+1;
-// }
-// else if(b==c && b==d && b==e)   
-// {
-//     p=p+1;
-// }
-// else if(c==d && c==e) 
-// {
-//     q=q+1;
-// }
 
-// else if(d==e)
-// {
-//     r=r+1;
-// } 

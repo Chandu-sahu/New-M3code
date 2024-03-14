@@ -1,23 +1,13 @@
 const input = require("readline-sync")
-let n = input.questionInt("enter the n number")
-let hra;
-let da;
-let gs;
-if(n<=10000)
+let n = input.questionInt("enter n number")
+let s=0;
+let i=1;
+while(i<=n)
 {
-    hra=20/100*n
-    da=80/100*n;
-}
-else if(n<=20000)
-{
-    hra=25/100*n
-    da=90/100*n;
-}
-else
-{
-    hra=30/100*n
-    da=90/100*n;
-}
+    if(n%i==0)
+    {
+        console.log(i)
+    }
 
-gs=n+hra+da;
-console.log(gs)
+i++;
+}
