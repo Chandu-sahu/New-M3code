@@ -1,20 +1,12 @@
-const input =require("readline-sync")
-let n = input.questionInt("enter the n number")
+const input = require("readline-sync")
+let n = input.questionInt("enter n number")
+let s=0;
+let i=n;
+while(i>0)
+{
+    r=i%10
+    s=s+r;   
 
-if(n%100!=0)
-{
-    if(n%4==0)
-    {
-        console.log("leap year")
-    }
-    else{
-        console.log("not leap year")
-    }
+i=Math.floor(i/10)
 }
-else if(n%400==0)
-{
-    console.log("leap year")
-}
-else{
-    console.log("not leap year")
-}
+console.log(s)

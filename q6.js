@@ -1,30 +1,13 @@
-const input =require("readline-sync")
-let a = input.questionInt("enter the a number")
-let b = input.questionInt("enter the b number")
-let c = input.questionInt("enter the c number")
-let d = input.questionInt("enter the d number")
-let m;
-let m2;
-let m3;
-if(a>b)
+const input = require("readline-sync")
+let n = input.questionInt("enter n number")
+let s=0;
+let i=n;
+while(i>0)
 {
-    m=a;
+    r=i%10
+    s=s+1
+    
+i=Math.floor(i/10)
 }
-else{
-    m=b;
-}
-if(c>d)
-{
-    m2=c;
-}
-else{
-    m2=d;
-}
-if(m>m2)
-{
-    m3=m
-}
-else{
-    m3=m2
-}
-console.log(m3)
+console.log(s)
+
