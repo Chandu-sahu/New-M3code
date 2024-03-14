@@ -1,8 +1,16 @@
 const input =require("readline-sync")
-let dd = input.questionInt("enter the d number")
-let mm = input.questionInt("enter the m number")
-let yyyy = input.questionInt("enter the y number")
+let a = input.questionInt("enter the a number")
+let b = input.questionInt("enter the a number")
 
-console.log(dd)
-console.log(mm)
-console.log(yyyy)
+if(a>b)
+{
+    max=a;
+    min=b;
+}
+else
+{
+    max=b;
+    min=a;
+}
+
+   console.log(max)

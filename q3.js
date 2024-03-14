@@ -1,12 +1,14 @@
 const input =require("readline-sync")
-let a = input.questionInt("enter the a number")
-let b = input.questionInt("enter the a number")
-let c;
+let n = input.questionInt("enter the n number")
 
-c=a;                                        
-a=b;                                        
-b=c;                               
-
-console.log(a)
-console.log(b)
-
+if(n==0)
+{
+    console.log("zero")
+}
+else if(n>0)
+{
+    console.log("positive")
+}
+else{
+    console.log("negative")
+}
