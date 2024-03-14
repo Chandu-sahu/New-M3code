@@ -1,14 +1,13 @@
-const input =require("readline-sync")
-let n = input.questionInt("enter the n number")
-
-if(n==0)
+const input = require("readline-sync")
+let n = input.questionInt("enter n number")
+let s =0;
+for(let i=1; i<=n; i++)
 {
-    console.log("zero")
-}
-else if(n>0)
-{
-    console.log("positive")
-}
-else{
-    console.log("negative")
+    str="";
+    if(i%2!=0)
+    {
+         s=s+i;
+         str+=s;
+    }
+    console.log(str)
 }

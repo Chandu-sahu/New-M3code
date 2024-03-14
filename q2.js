@@ -1,11 +1,11 @@
-const input =require("readline-sync")
-let n = input.questionInt("enter the n number")
-// let b = input.questionInt("enter the a number")
+const input = require("readline-sync")
+let n = input.questionInt("enter n number")
 
-if(n%2==0)
+for(let i=1; i<n; i++)
 {
-    console.log("even")
-}
-else{
-    console.log("odd")
+    
+    if(i%2==0)
+    {
+        console.log(i)
+    }
 }

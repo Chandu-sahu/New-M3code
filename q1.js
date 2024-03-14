@@ -1,16 +1,8 @@
-const input =require("readline-sync")
-let a = input.questionInt("enter the a number")
-let b = input.questionInt("enter the a number")
+const input = require("readline-sync")
+let n = input.questionInt("enter n number")
+str ="chandu" 
 
-if(a>b)
+for(let i=1; i<=n; i++)
 {
-    max=a;
-    min=b;
+    console.log(str)
 }
-else
-{
-    max=b;
-    min=a;
-}
-
-   console.log(max)

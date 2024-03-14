@@ -1,24 +1,9 @@
-const input =require("readline-sync")
-let n = input.questionInt("enter the n number")
-let p;
-let r; 
-let e;
-let w;
-if(n%2!=0)
+const input = require("readline-sync")
+let m = input.questionInt("enter m number")
+let n = input.questionInt("enter n number")
+let p=0;
+for(let i=m; i<=n; i++)
 {
-   r=n%2;
-   if(r<=2)
-   {
-    p=n*2;
-   }
-}   
-else
-{
-   w=Math.floor(n/2)
-   p=w*2;
+    p=i+p;   
 }
 console.log(p)
-
-
-
-
