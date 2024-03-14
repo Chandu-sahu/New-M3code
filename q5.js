@@ -1,20 +1,48 @@
-const input = require("readline-sync")
-let n = input.questionInt("enter  the legnth of array:")
-let a=[];
-let o=0;
-let e=0;
-for(let i=0; i<n; i++)
-{
-     a[i] = input.questionInt("enter  the element no:")
+// pattern -
+// 1               *
+// 121             **
+// 12321           ***
 
-    if(a[i]%2!=0)
+
+const input = require("readline-sync")
+let n = input.questionInt("enter the n number")
+let k;
+str = "";
+let i;
+for(let i=1; i<=n; i++)
+{
+    str="";
+    for(let j=1; j<=i; j++)
     {
-        o=o+a[i];
+        str+=j;
+    
     }
-    else
-    {
-        e=e+a[i];
-    }    
+for(let k=i-1; k>0; k--)
+ {
+    str+=k;   
+ }
+   console.log(str)
 }
-console.log(o)
-console.log(e)
+
+
+
+
+
+
+// star pattern;
+
+// const input = require("readline-sync")
+// let n = input.questionInt("enter the n number")
+// let s=0;
+// str = "";
+// let i;
+// for(let i=1; i<=n; i++)
+// {
+//     str="";
+
+//     for(let j=1; j<=i; j++)
+//     {
+//         str+="*";
+//     }
+//     console.log(str)
+// }
