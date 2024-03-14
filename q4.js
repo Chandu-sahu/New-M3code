@@ -1,20 +1,13 @@
-const input = require("readline-sync")
-let n = input.questionInt("enter  the legnth of array:")
-let a=[]
-t = input.questionInt("enter  the target number:");
-let c=0;
-for(let i=0; i<n; i++)
-{
-    a[i] =input.questionInt("enter the element number")
-    
-    if(a[i]==t)
-    { 
-        c++;
-        i=n;
-        console.log("yes")
-    }
-    else{
-        console.log("no")
-    }
-}  
+// print the sum of the digit of number:
 
+const input = require("readline-sync")
+let n = input.questionInt("enter the number")
+let s=0;
+let i=n;
+while(i>0)
+{
+    r=i%10
+    s=s+r;
+    i=Math.floor(i/10)
+}
+console.log(s)

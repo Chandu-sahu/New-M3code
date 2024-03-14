@@ -1,11 +1,19 @@
+// square and rectangle:
+
 const input = require("readline-sync")
-let n = input.questionInt("enter  the legnth of array:")
-let a=[];
+let ab = input.questionInt("enter the ab number")
+let bc = input.questionInt("enter the bc number")
+let cd = input.questionInt("enter the cd number")
+let da = input.questionInt("enter the da number")
 
-for(let i=0; i<n; i++)
+if(ab==bc && bc==cd)
 {
-     a[i] = [i+1];
+    console.log("square")
 }
-
-    console.log(a)
-
+else if(ab==cd && bc==da)
+{
+    console.log("rectangle")
+}
+else{
+    console.log("irregular quadrilateral")
+}
