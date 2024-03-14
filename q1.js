@@ -1,8 +1,10 @@
 const input = require("readline-sync")
-let n = input.questionInt("enter n number")
-str ="chandu" 
-
-for(let i=1; i<=n; i++)
+let n = input.questionInt("enter  the legnth of array:")
+let a=[];
+for(let i=0; i<n; i++)
 {
-    console.log(str)
+     a[i] = input.questionInt("enter the element no.")
 }
+
+    console.log(a)
+

@@ -1,11 +1,11 @@
 const input = require("readline-sync")
-let n = input.questionInt("enter n number")
+let n = input.questionInt("enter  the legnth of array:")
+let a=[];
 
-for(let i=1; i<n; i++)
+for(let i=0; i<n; i++)
 {
-    
-    if(i%2==0)
-    {
-        console.log(i)
-    }
+     a[i] = [i+1];
 }
+
+    console.log(a)
+
